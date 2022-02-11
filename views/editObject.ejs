@@ -1,0 +1,31 @@
+<%- include('include/head') -%>
+
+        <title><%= objectTitle %></title>
+    </head>
+    <body>
+        <div class="alighnwidth">
+
+            <div class="topcadr">
+                <a href="/">Home</a>
+                <a href="/new-object">Add Object</a>
+            </div>
+
+        <h1>Edit Object : <%= object.title %> </h1>
+
+        <form method="POST" action=<%= "/objectpost/edit/" + object._id %> >
+            <div >
+                <label >Title</label>
+                <input value="<%= object.title %>"  name="title" type="text" >
+            </div>
+            <div >
+                <label  >Description</label>
+                <input value="<%= object.description %>" name="description" type="text"   >
+            </div>
+            <button type="submit" >Update object</button>
+        </form>
+
+
+        
+    </div>
+
+        <%- include('include/footer') -%>

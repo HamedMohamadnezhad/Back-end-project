@@ -1,0 +1,10 @@
+const express = require('express');
+const controller = require('./controllers/controller');
+const router = express.Router();
+router.get('/', controller.getHomePage);
+router.get('/new-object', controller.getNewObject);
+router.post('/objectpost', controller.postObjectPost);
+router.post('/objectpost/del/:id', controller.delObject);
+router.get('/objectpost/edit/:id', controller.getEditObject);
+router.post('/objectpost/edit/:id', controller.postEditObject);
+module.exports = router;

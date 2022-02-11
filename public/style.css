@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(54, 54, 54);
+    color: black;
+}
+
+.alighnwidth{
+    width: 80%;
+    background-color: rgb(103, 170, 26);
+    margin: auto;
+    padding: 15px;
+    line-height: 20px;
+}
+
+.topcadr{
+    background-color: black;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 5px;
+}
+.topcadr a{
+    color: aliceblue;
+    margin-right: 15px;
+}
+
+button{
+    background-color: rgb(47, 80, 3);
+    color: bisque;
+    padding: 2px 10px ;
+    margin: 2px;
+}
+
+hr{
+    color: black; background-color: #000;
+}
+
+input{
+    margin: 10px;
+    padding: 3px;
+    
+}
+
+.copyr{
+    text-align: center;
+    color: aliceblue;
+    margin: 15px;
+}

@@ -1,0 +1,31 @@
+<%- include('include/head') -%>
+
+    <title>
+        <%= dataTitleInPage %>
+    </title>
+    </head>
+
+    <body>
+
+        <div class="alighnwidth">
+
+            <div class="topcadr">
+                <a href="/">Home</a>
+                <a href="/new-object">Add Object</a>
+            </div>
+
+            <h1>New object Page</h1>
+
+            <form method="POST" action="/objectpost">
+                <div>
+                    <label>Title</label>
+                    <input name="title" type="text">
+                </div>
+                <div>
+                    <label>Description</label>
+                    <input name="description" type="text">
+                </div>
+                <button type="submit">Add object</button>
+            </form>
+        </div>
+        <%- include('include/footer') -%>

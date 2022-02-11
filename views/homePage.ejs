@@ -1,0 +1,42 @@
+<%- include('include/head') -%>
+
+
+    <title>
+        <%= dataTitleInPage %>
+    </title>
+    </head>
+
+    <body>
+        <div class="alighnwidth" >
+
+            <div class="topcadr">
+                <a href="/">Home</a>
+                <a href="/new-object">Add Object</a>
+            </div>
+
+            <h1>Home Page</h1>
+
+            <% if(objects.length !=0){ %>
+                <% objects.forEach( object=> { %>
+                        <h3>
+                            <%= object.title %>
+                        </h3>
+                        <h5>Date: <%= object.created_at.toISOString() %>
+                        </h5>
+                            <%= object.description %>
+                        <form action=<%="/objectpost/del/" + object._id %> method="POST">
+                            <button>Delete</button>
+                        </form>
+                        <form action=<%="/objectpost/edit/" + object._id %> method="GET">
+                            <button>Edit</button>
+                        </form>
+                        <hr>
+       
+
+
+        <% }) %>
+            <% } %>
+
+        </div>
+
+<%- include('include/footer') -%>
